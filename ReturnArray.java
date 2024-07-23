@@ -1,11 +1,14 @@
 public class ReturnArray{
-  
-public int[] printarr(int[]a){
-  // initialize []a here
-  return a;   
+
+    public static int[] printarr(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("values: "+a[i]);
+        }
+        return a;
     }
-  public static void main(String[]args){
-  ReturnArray r=new ReturnArray();
-    // call the function and print it here
-  }
+
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 4, 5};
+        printarr(arr);
+    }
 }
